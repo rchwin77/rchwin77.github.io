@@ -6,125 +6,24 @@
   <title>테슬라 주니퍼 구매 후 필수 제품</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      color: #e8e8e8;
-      min-height: 100vh;
-      padding: 2rem;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-    
-    .subtitle {
-      color: #94a3b8;
-      font-size: 0.95rem;
-    }
-    
-    .product-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    
-    .product-card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 1.25rem;
-      padding: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    
-    .product-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    }
-    
-    .product-image {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 8px;
-      background: #2d3748;
-    }
-    
-    .product-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-    
-    .product-name {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    
-    .product-desc {
-      font-size: 0.9rem;
-      color: #94a3b8;
-      line-height: 1.5;
-    }
-    
-    .product-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: #3b82f6;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-top: 0.25rem;
-    }
-    
-    .product-link:hover {
-      color: #60a5fa;
-      text-decoration: underline;
-    }
-    
-    .product-link::after {
-      content: '→';
-    }
-    
-    @media (max-width: 600px) {
-      .product-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      
-      .product-image {
-        width: 100%;
-        height: 180px;
-        margin: 0 auto;
-      }
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #e8e8e8; min-height: 100vh; padding: 2rem; }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { color: #94a3b8; font-size: 0.95rem; }
+    .product-list { display: flex; flex-direction: column; gap: 1.5rem; }
+    .product-card { background: rgba(255,255,255,0.05); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 140px 1fr; gap: 1.25rem; padding: 1rem; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .product-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+    .product-image { width: 140px; height: 140px; object-fit: cover; border-radius: 8px; background: #2d3748; }
+    .product-info { display: flex; flex-direction: column; justify-content: center; gap: 0.4rem; }
+    .product-name { font-size: 1.1rem; font-weight: 700; color: #fff; }
+    .product-price { font-size: 1rem; font-weight: 600; color: #fbbf24; }
+    .product-desc { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
+    .product-link { display: inline-flex; align-items: center; margin-top: 0.5rem; padding: 0.5rem 1rem; background: #3b82f6; color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; border-radius: 8px; width: fit-content; transition: background 0.2s; }
+    .product-link:hover { background: #2563eb; }
+    .product-link::after { content: '→'; margin-left: 0.25rem; }
+    @media (max-width: 600px) { .product-card { grid-template-columns: 1fr; text-align: center; } .product-image { width: 100%; height: 180px; margin: 0 auto; } .product-link { margin: 0.5rem auto 0; } }
   </style>
 </head>
 <body>
@@ -133,58 +32,7 @@
       <h1>테슬라 주니퍼 구매 후 필수 제품</h1>
       <p class="subtitle">추천 필수 구매 리스트</p>
     </header>
-    
-    <div class="product-list">
-      <!-- 제품 1: 예시 - 실제 제품으로 교체하세요 -->
-      <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=280&h=280&fit=crop" alt="테슬라 차량용 충전 케이블" class="product-image">
-        <div class="product-info">
-          <h2 class="product-name">차량용 충전 케이블 / 어댑터</h2>
-          <p class="product-desc">집이나 여행지에서 편리하게 충전할 수 있는 이동식 충전 케이블. 다양한 콘센트용 어댑터 포함.</p>
-          <a href="#" class="product-link">구매하기</a>
-        </div>
-      </article>
-      
-      <!-- 제품 2 -->
-      <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=280&h=280&fit=crop" alt="실리콘 매트" class="product-image">
-        <div class="product-info">
-          <h2 class="product-name">트렁크 / 프론크 실리콘 매트</h2>
-          <p class="product-desc">물건 적재 시 스크래치 방지와 청소 편의성을 위한 실리콘 매트.</p>
-          <a href="#" class="product-link">구매하기</a>
-        </div>
-      </article>
-      
-      <!-- 제품 3 -->
-      <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=280&h=280&fit=crop" alt="핸들 커버" class="product-image">
-        <div class="product-info">
-          <h2 class="product-name">스티어링 휠 커버 (욜크 커버)</h2>
-          <p class="product-desc">주니퍼 욜크 스티어링 휠을 보호하고 촉감을 개선하는 커버.</p>
-          <a href="#" class="product-link">구매하기</a>
-        </div>
-      </article>
-      
-      <!-- 제품 4 -->
-      <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=280&h=280&fit=crop" alt="스크린 보호필름" class="product-image">
-        <div class="product-info">
-          <h2 class="product-name">중앙 디스플레이 보호필름</h2>
-          <p class="product-desc">터치스크린 긁힘 방지와 눈부심 감소용 강화유리 보호필름.</p>
-          <a href="#" class="product-link">구매하기</a>
-        </div>
-      </article>
-      
-      <!-- 제품 5 -->
-      <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=280&h=280&fit=crop" alt="자동차용 USB 허브" class="product-image">
-        <div class="product-info">
-          <h2 class="product-name">USB-C 허브 / 멀티 어댑터</h2>
-          <p class="product-desc">주니퍼의 USB-C 포트를 확장해 여러 기기 동시 충전 가능.</p>
-          <a href="#" class="product-link">구매하기</a>
-        </div>
-      </article>
-    </div>
+    <div class="product-list"><article class="product-card"><img src="https://ae01.alicdn.com/kf/S8757ccf586f24219b6321a6431f861f7A.png" alt="테슬라 모델 3 모드 Y 자동차 프론트 후드 로고 커버 엠블럼 스티커 스타일링 자동차 바디 후면 트렁크 배지 액세서리에 대 한 1pcs ABS - AliExpress 34" class="product-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Crect fill='%232d3748' width='280' height='280'/%3E%3Ctext fill='%2364748b' x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle'%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C/text%3E%3C/svg%3E'"><div class="product-info"><h2 class="product-name">테슬라 모델 3 모드 Y 자동차 프론트 후드 로고 커버 엠블럼 스티커 스타일링 자동차 바디 후면 트렁크 배지 액세서리에 대 한 1pcs ABS - AliExpress 34</h2><p class="product-price">가격 확인</p><p class="product-desc">Smarter Shopping, Better Living! Aliexpress.com</p><a href="https://ko.aliexpress.com/item/1005008084722640.html?spm=a2g0o.order_list.order_list_main.97.2036140fP9tObn&amp;gatewayAdapt=glo2kor" class="product-link" target="_blank" rel="noopener">구매하기</a></div></article><article class="product-card"><img src="https://ae01.alicdn.com/kf/S6f7021db110b43f2a8b057141faeb178i.jpg" alt="테슬라 모델 Y 주니퍼 2025용 ABS 카본 파이버 패턴 스포일러, 오리지널 고성능 트렁크 윙 자동차 개조 액세서리 - AliExpress 34" class="product-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Crect fill='%232d3748' width='280' height='280'/%3E%3Ctext fill='%2364748b' x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle'%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C/text%3E%3C/svg%3E'"><div class="product-info"><h2 class="product-name">테슬라 모델 Y 주니퍼 2025용 ABS 카본 파이버 패턴 스포일러, 오리지널 고성능 트렁크 윙 자동차 개조 액세서리 - AliExpress 34</h2><p class="product-price">가격 확인</p><p class="product-desc">Smarter Shopping, Better Living! Aliexpress.com</p><a href="https://ko.aliexpress.com/item/1005008754619745.html?spm=a2g0o.order_list.order_list_main.62.2036140fP9tObn&amp;gatewayAdapt=glo2kor" class="product-link" target="_blank" rel="noopener">구매하기</a></div></article><article class="product-card"><img src="https://ae01.alicdn.com/kf/Sb3e92644f2c740b2ac28ab16f988fda9k.jpg" alt="테슬라 모델 Y 주니퍼 2025+ 4PCS 휠 캡 자동차 교체용 휠 캡 19인치 퍼포먼스 자동차 휠캡 커버 액세서리 - AliExpress 34" class="product-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Crect fill='%232d3748' width='280' height='280'/%3E%3Ctext fill='%2364748b' x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle'%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C/text%3E%3C/svg%3E'"><div class="product-info"><h2 class="product-name">테슬라 모델 Y 주니퍼 2025+ 4PCS 휠 캡 자동차 교체용 휠 캡 19인치 퍼포먼스 자동차 휠캡 커버 액세서리 - AliExpress 34</h2><p class="product-price">가격 확인</p><p class="product-desc">Smarter Shopping, Better Living! Aliexpress.com</p><a href="https://ko.aliexpress.com/item/1005010200116337.html?spm=a2g0o.order_list.order_list_main.67.2036140fP9tObn&amp;gatewayAdapt=glo2kor" class="product-link" target="_blank" rel="noopener">구매하기</a></div></article></div>
   </div>
 </body>
 </html>
